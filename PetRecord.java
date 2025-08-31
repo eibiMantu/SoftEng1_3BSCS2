@@ -1,5 +1,31 @@
 public class PetRecord {
-    private String petID;
+    private String petId;
     private String petName;
     private Pet pet;
+
+    public String getPetId(){
+        return petId;
+    }
+
+    public void setPetId(String pedId) {
+        this.petId= petId;
+    }
+
+    public String getPetName(){
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName= petName;
+    }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet=pet;
+    }
+
+
 }

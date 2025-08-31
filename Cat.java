@@ -1,25 +1,22 @@
-public class Cat implements Pet {} {
+public class Cat implements Pet {
     private Integer noOfLives;
 
-
-    
-    public Integer getnoOfLives() {
+    public Integer getnoOfLives(){
         return noOfLives;
     }
 
-    public void setNoOfLives(Integer noOfLives) {
+    public void setnoOfLives(Integer noOfLives){
         this.noOfLives = noOfLives;
     }
 
-     @Override
+    @Override
     public String play() {
-        return "Catch and Fetch!";
+        return "Pouncing a dead rat!";
     }
 
     @Override
     public String makeSound() {
-        return "Aw! Aw!";
+        return "Meow, meow!";
     }
     
-
 }

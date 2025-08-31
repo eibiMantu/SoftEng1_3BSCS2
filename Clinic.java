@@ -3,7 +3,7 @@ import java.util.*;
 public class Clinic {
     public static void main(String[] args) {
         
-Scanner input =new Scanner(System.in());
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Choose pet");
         System.out.println("[1] Dog");
@@ -16,23 +16,31 @@ Scanner input =new Scanner(System.in());
         System.out.print("\nEnter number choice: ");
         int choice = input.nextInt();
 
-        switch choice {
-            case 1: pet = new Dog();
-                    petRecord.setPetID("P001")
-                    petRecord.setPetName("Bantay");
-                    petRecord.setPet(new Dog);
-                    ((Dog)pet).setBreed("Aspin");
-                
+        switch (choice) {
+            case 1:
+                pet = new Dog();
+                petRecord.setPetId("P001");
+                petRecord.setPetName("Bantay");
+                petRecord.setPet(pet);
+                ((Dog)pet).setBreed("Aspin");
                 break;
-            case 2: petRecord.setPetID("P001")
-                    petRecord.setPetName("Muning");
-                    petRecord.setPet(pet);
-                    ((Cat)pet).setNoOfLives((9));
-                
+
+            case 2:
+                pet = new Cat();
+                petRecord.setPetId("P002");
+                petRecord.setPetName("Muning");
+                petRecord.setPet(pet);
+                ((Cat)pet).setnoOfLives(9);
                 break;
+
+            case 3:
+                System.exit(0);
+                break;
+
             default:
                 System.exit(0);
         }
 
+        System.out.println("Pet id: " + petRecord.getPetId());
     }
 }
