@@ -1,3 +1,5 @@
+package factoryPattern;
+
 import java.util.*;
 
 public class Clinic {
@@ -42,5 +44,9 @@ public class Clinic {
         }
 
         System.out.println("Pet id: " + petRecord.getPetId());
-    }
+        System.out.println("Pet name is "+ petRecord.getPetName());
+        System.out.println("Pet kind: " + petRecord.getClass().getSimpleName());
+        System.out.println("Communication sound: "+ petRecord.getPet().makeSound());
+        System.out.println("Play mode: " + petRecord.getPet().play());
+    }   
 }
