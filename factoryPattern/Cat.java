@@ -1,4 +1,5 @@
 package factoryPattern;
+
 public class Cat implements Pet {
     private Integer noOfLives;
 
